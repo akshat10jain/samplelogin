@@ -12,7 +12,7 @@ Clone the repo: git clone https://github.com/akshat10jain/samplelogin.git
  
  1.Install packages: npm install
 
- 2.Change out the database configuration in by making a new file in the config/database.js 
+ 2.Change out the database configuration by making a new file in the config/database.js 
 
 like this
  
