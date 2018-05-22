@@ -12,7 +12,7 @@ Clone the repo: git clone https://github.com/akshat10jain/samplelogin.git
  
  1.Install packages: npm install
 
- 2.Change out the database configuration in start.js like mongodb://<dbuser>:<dbpassword>@ds129.mlab.com:29670/xyz
+ 2.Change out the database configuration in config/database.js
  
  3.Launch: node start.js
  

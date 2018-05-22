@@ -8,9 +8,9 @@ var morgan       = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
 var session      = require('express-session');
-
+var configDB = require('./config/database.js');
 //connection to database
-mongoose.connect('mongodb://akshat:sample@ds129670.mlab.com:29670/sample', { 
+mongoose.connect(configDB.url, { 
     useMongoClient: true 
 });
 
