@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Sample Login</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Sample Login</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                                <a href="/logout" class="btn btn-default ">
+                                <span class="fa fa-user"></span> Logout</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        
+    <div class="container">
+
+        <div class="page-header text-center">
+            <h1> Profile </h1>
+           
+        </div>
+
+        <div class="row">
+
+            
+            <div class="col-sm-6">
+               
+
+                    <% if (user.local.email) { %>
+                        
+                        <TABLE BORDER="3" CELLSPACING="0" CELLPADDING="6" >
+                            <TR>
+                                <TH COLSPAN="3">
+                                    <H3>
+                                        <BR>USER DETAILS FROM DATABASE</H3>
+                                </TH>
+                            </TR>
+                            <TH>  <strong>id</strong>:
+                                <%= user._id %>
+                            </TH>
+                            <TH> <strong>email</strong>:
+                                <%= user.local.email %>
+                            </TH>
+                            <TH><strong>password</strong>:
+                                <%= user.local.password %>
+                            </TH>
+                        </TABLE>
+
+
+                        <% } else { %>
+
+                            <% } %>
+
+               
+            </div>
+
+
+
+
+
+        </div>
+</body>
+
+</html>
